@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-content{
+    height: calc(100vh - 50px);
+    min-height: 520px;
+    width: 100vw;
+    max-width: 400px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+}
+
+#footer-content{
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(62, 46, 34);
+    color : #fff;
+    text-align: center;
+}
+
+#footer-content p{
+    line-height: 50px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#logo{
+    display: block;
+    width: 100%;
+    min-height: 170px;
+}
+
+.info-cont{
+    width: 100%;
+    height: 50px;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(104, 60, 17, 1) 0%, rgba(219, 209, 199, .4) 51%, rgba(104, 60, 17, 1) );
+    border-radius: 20px;
+    margin: 5px 0;
+}
+
+.actions-cont{
+    width: 100%;
+    font-size: 0;
+}
+.action{
+    width: 33.33%;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Helveica, sans-serif;
+    text-align: center;
+    padding: 5px;
+    transition: all .3s;
+}
+
+.score-cont{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: 50px;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    border-top: 2px solid rgb(62, 46, 34);
+}
+.score-cont .stars{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    height: 100%;
+}
+.score-cont .stars img{
+    height: 100%;
+    float: right;
+}
+
+.score-cont span{
+    line-height: 50px;
+    color: rgb(62,46,34);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.score-cont .star:hover {
+    content : url('./../img/24.1\ estrella_sel.svg.svg');
+}
+
+.action:hover{
+    padding: 8px;
+}
+ #mensaje img:hover{
+    content : url('../img/28.4\ campana_sel.svg.svg');
+    transition: all .3s ;
+}
+ #cuenta img:hover{
+    content : url('../img/28.1\ cuenta_sel.svg.svg');
+    transition: all .3s ;
+}
+ #cancelar img:hover{
+    content : url('../img/28.3\ cancelar_sel.svg.svg');
+    transition: all .3s ;
+}
+
+.stars .star:hover ~ .star{
+    content: url('../img/24.1\ estrella_sel.svg.svg');
+}
